@@ -281,11 +281,113 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
                         </div>
                     </div>
                 </div>
+                <form class="col-4 ">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseBuy" aria-expanded="false" aria-controls="collapseBuy">
+                    Как купить?
+                </button>
+                <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseDelivery" aria-expanded="false" aria-controls="collapseBuy">
+                    Как доставить?
+                </button>
+                <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseGuarantee" aria-expanded="false" aria-controls="collapseBuy">
+                    Какая гарантия?
+                </button>
+            </p>
+            <div class="collapse" id="collapseBuy">
+                <div class="card card-body">
+                    Возьми и купи.
+                </div>
+            </div>
+            <div class="collapse" id="collapseDelivery">
+                <div class="card card-body">
+                    Возьми и доставь.
+                </div>
+            </div>
+            <div class="collapse" id="collapseGuarantee">
+                <div class="card card-body">
+                    Гарантированная.
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Номер</th>
+                    <th scope="col">Название товара</th>
+                    <th scope="col">Цена за штуку</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Итоговая сумма</th>
+                    <th scope="col">Статус заказа</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Лапша</td>
+                    <td>119</td>
+                    <td>1</td>
+                    <td>119</td>
+                    <td>
+                        <div class="alert alert-primary" role="alert">
+                            Новый
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Каша</td>
+                    <td>99</td>
+                    <td>2</td>
+                    <td>198</td>
+                    <td>
+                        <div class="alert alert-warning" role="alert">
+                            Обработка
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Сахар</td>
+                    <td>69</td>
+                    <td>10</td>
+                    <td>690</td>
+                    <td>
+                        <div class="alert alert-success" role="alert">
+                            Обработан
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Соль</td>
+                    <td>89</td>
+                    <td>1</td>
+                    <td>89</td>
+                    <td>
+                        <div class="alert alert-danger" role="alert">
+                            Отмена
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </main>
 
     </div>
